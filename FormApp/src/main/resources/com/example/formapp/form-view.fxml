@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane prefHeight="337.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.formapp.FormController">
+    <children>
+        <GridPane layoutX="26.0" layoutY="55.0" prefHeight="240.0" prefWidth="387.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="189.20001220703125" minWidth="10.0" prefWidth="102.79998779296875" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="312.4000244140625" minWidth="10.0" prefWidth="218.00001220703126" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="81.19998779296876" minHeight="10.0" prefHeight="76.4" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="87.19998779296876" minHeight="10.0" prefHeight="51.19999999999999" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="134.8000244140625" minHeight="10.0" prefHeight="101.60002441406249" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Username: " textAlignment="JUSTIFY" />
+                <Label text="Password: " GridPane.rowIndex="1" />
+                <PasswordField id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField id="usernameField" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
