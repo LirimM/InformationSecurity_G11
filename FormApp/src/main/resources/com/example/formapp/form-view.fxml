@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="337.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.formapp.FormController">
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.formapp.FormController">
     <children>
         <GridPane layoutX="26.0" layoutY="55.0" prefHeight="240.0" prefWidth="387.0">
             <columnConstraints>
@@ -27,7 +31,26 @@
                 <Label text="Password: " GridPane.rowIndex="1" />
                 <PasswordField id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField id="usernameField" GridPane.columnIndex="1" />
+            <Button id="loginBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #1877f2;" text="Log In" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend />
+               </effect>
+               <GridPane.margin>
+                  <Insets top="-30.0" />
+               </GridPane.margin>
+            </Button>
             </children>
         </GridPane>
+      <Label alignment="CENTER" layoutX="51.0" layoutY="24.0" prefHeight="40.0" prefWidth="337.0" text="Welcome" textAlignment="RIGHT">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

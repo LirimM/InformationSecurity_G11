@@ -11,9 +11,13 @@ public class FormApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FormApplication.class.getResource("form-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Log In!");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Logging Application");
         stage.setScene(scene);
+        stage.setMaxHeight(400);
+        stage.setMaxWidth(420);
+        stage.setMinHeight(400);
+        stage.setMinWidth(420);
         stage.show();
     }
 
