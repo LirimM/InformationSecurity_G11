@@ -1,24 +1,23 @@
 package com.example.formapp;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-
-public class FormController {
-
-}
-
-/*
-package com.example.formapp;
-
-        import javafx.fxml.FXML;
-        import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class FormController {
     @FXML
-    private Label welcomeText;
+    private TextField usernameField;
+    @FXML
+    private PasswordField passwordField;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to our application!");
+    protected void onLogInClickHandler() {
+        String username = usernameField.getText();
+        String password = passwordField.getText();
+
+        System.out.println(username + " " +password);
+
+        //Not functional yet
+        WindowsServiceClient.logData(username, password);
     }
-}*/
+}

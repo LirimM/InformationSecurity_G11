@@ -29,9 +29,9 @@
             <children>
                 <Label text="Username: " textAlignment="JUSTIFY" />
                 <Label text="Password: " GridPane.rowIndex="1" />
-                <PasswordField id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <TextField id="usernameField" GridPane.columnIndex="1" />
-            <Button id="loginBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #1877f2;" text="Log In" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <PasswordField id="passwordField" fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField id="usernameField" fx:id="usernameField" GridPane.columnIndex="1" />
+            <Button id="loginBtn" mnemonicParsing="false" onAction="#onLogInClickHandler" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #1877f2;" text="Log In" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="14.0" />
                </font>
