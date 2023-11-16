@@ -15,9 +15,6 @@ public class FormController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        System.out.println(username + " " +password);
-
-        //Not functional yet
         WindowsServiceClient.logData(username, password);
     }
 }
