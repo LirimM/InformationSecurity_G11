@@ -51,7 +51,7 @@
                   <Insets top="-30.0" />
                </GridPane.margin>
             </Button>
-            <CheckBox accessibleRole="IMAGE_VIEW" minHeight="5.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="159.0" style="-fx-alignment: left;" text="Remember me?" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+            <CheckBox accessibleRole="IMAGE_VIEW" minHeight="5.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="159.0" text="Remember me?" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
