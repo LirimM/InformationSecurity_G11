@@ -18,6 +18,10 @@ These projects were developed in Java and the JAR file that is used as a Windows
 [OPENJFX SDK 21](https://gluonhq.com/products/javafx/)  
 [NSSM](https://nssm.cc/download)  
 
+## How it works
+
+The form application has a simple gui and a class that acts as a client which sends the data to the service. The service and the client communicate with each other through sockets and Advapi32 is used to log the data into Windows Application Logs.
+
 ## How to run the projects
 
 First generate the JAR files for each of the projects. After that use NSSM to install the service to Windows Services, execute the command below in CMD (as Administrator):
